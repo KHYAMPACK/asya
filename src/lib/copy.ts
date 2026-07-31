@@ -1,0 +1,37 @@
+export const copy = {
+  brand: "Asya",
+  welcomeLine: "sana küçük, tatlı bir şey hazırladım",
+  start: "Başla",
+  progress: (current: number, total: number) => `${current} / ${total}`,
+  next: "Devam",
+  doneTitle: "bitti ✨",
+  doneBody: "cevapların bende. teşekkürler — yakında kahve mi?",
+  submitting: "gönderiliyor…",
+  submitError: "bir şeyler ters gitti, bir daha dener misin?",
+  colorInit: [
+    "rengin alınıyor…",
+    "initialize ediliyor…",
+    "bir saniye, ayarlıyorum…",
+    "neredeyse hazır…",
+  ],
+  colorReady: "işte senin rengin ✨",
+  gagFallback: [
+    "yanlış cevap 😌",
+    "bir daha dene…",
+    "hayır butonu bozuldu",
+    "öyle bir seçenek yok aslında",
+    "evet'e kayıyorsun farkındaysan",
+  ],
+  answers: {
+    title: "Cevaplar",
+    subtitle: "sadece senin için",
+    passwordLabel: "şifre",
+    unlock: "Aç",
+    empty: "henüz kimse cevaplamamış",
+    wrongPassword: "şifre yanlış",
+    noAttempts: (n: number) =>
+      n === 0 ? "hayır denemedi 😇" : `${n} kez hayır denedi 👀`,
+    loading: "yükleniyor…",
+    refresh: "Yenile",
+  },
+} as const;
