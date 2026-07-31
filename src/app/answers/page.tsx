@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { copy } from "@/lib/copy";
-import { questions } from "@/lib/questions";
+import { activityQuestion, questions } from "@/lib/questions";
 import type { Submission } from "@/lib/types";
 
 export default function AnswersPage() {
@@ -45,9 +45,19 @@ export default function AnswersPage() {
     void load(password);
   }
 
-  const promptById = Object.fromEntries(
-    questions.map((q) => [q.id, q.prompt]),
-  );
+  const promptById: Record<string, string> = {
+    ...Object.fromEntries(questions.map((q) => [q.id, q.prompt])),
+    "car-playlist": "Araba playlist",
+    [activityQuestion.id]: activityQuestion.prompt,
+    cicek: "Favori çiçek",
+  };
+
+  const answerOrder = [
+    ...questions.map((q) => q.id),
+    "car-playlist",
+    activityQuestion.id,
+    "cicek",
+  ];
 
   return (
     <main className="shell admin-shell">
@@ -93,12 +103,12 @@ export default function AnswersPage() {
                       {new Date(sub.createdAt).toLocaleString("tr-TR")}
                     </time>
                     <ul>
-                      {questions.map((q) => {
-                        const a = sub.answers[q.id];
+                      {answerOrder.map((id) => {
+                        const a = sub.answers[id];
                         if (!a) return null;
                         return (
-                          <li key={q.id}>
-                            <strong>{promptById[q.id]}</strong>
+                          <li key={id}>
+                            <strong>{promptById[id]}</strong>
                             <span>{a.label}</span>
                             {typeof a.noAttempts === "number" && (
                               <em>

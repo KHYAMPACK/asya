@@ -29,7 +29,12 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Cevaplar eksik" }, { status: 400 });
   }
 
-  const expectedIds = new Set(questions.map((q) => q.id));
+  const expectedIds = new Set([
+    ...questions.map((q) => q.id),
+    "car-playlist",
+    "aktivite",
+    "cicek",
+  ]);
   const answeredIds = Object.keys(body.answers);
   if (answeredIds.length === 0) {
     return NextResponse.json({ error: "Cevaplar eksik" }, { status: 400 });

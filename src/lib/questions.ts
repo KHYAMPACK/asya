@@ -112,22 +112,19 @@ export const questions: Question[] = [
   {
     id: "favori-renk",
     type: "choice",
-    prompt: "Favori rengin hangisi?",
+    prompt: "En sevdiğin renk ne?",
     options: colorThemes.map((t) => ({ id: t.id, label: t.label })),
   },
-  // More questions later — placeholders so flow still works
-  {
-    id: "quiz-begen",
-    type: "stubbornYes",
-    prompt: "Bu quiz'i beğendin mi?",
-    yesLabel: "Evet",
-    noLabel: "Hayır",
-    behavior: "run",
-    gagLines: [
-      "yanlış cevap 😌",
-      "hayır kaçıyor…",
-      "yakalayamadın",
-      "tamam bu buton emekli oldu",
-    ],
-  },
 ];
+
+export const activityQuestion: ChoiceQuestion = {
+  id: "aktivite",
+  type: "choice",
+  prompt: "Buluşmada ne yapalım?",
+  options: [
+    { id: "kahve", label: "Kahve" },
+    { id: "bilardo", label: "Bilardo" },
+    { id: "bowling", label: "Bowling" },
+    { id: "fancy-dinner", label: "Akşam yemeği" },
+  ],
+};
