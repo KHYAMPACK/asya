@@ -10,9 +10,7 @@ https://YOUR-APP.vercel.app
 
 ## Setup
 
-1. Copy `.env.example` → `.env.local` and fill:
-   - Upstash Redis REST URL + token
-   - `ADMIN_PASSWORD` for `/answers`
-2. `npm run dev` locally, or push to GitHub → import in Vercel and add the same env vars.
+1. Locally: `npm run dev` — sessions save to `data/submissions.json` (no env needed).
+2. On Vercel: add Upstash Redis (`UPSTASH_REDIS_REST_URL`, `UPSTASH_REDIS_REST_TOKEN`) so answers persist across servers.
 
-Private answers: `https://YOUR-APP.vercel.app/answers`
+Open answers anytime (no password): `https://YOUR-APP.vercel.app/answers`

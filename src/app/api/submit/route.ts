@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getRedis, SUBMISSIONS_KEY } from "@/lib/redis";
+import { saveSubmission } from "@/lib/store";
 import type { AnswerValue, Submission } from "@/lib/types";
 import { questions } from "@/lib/questions";
 
@@ -10,14 +10,6 @@ type Body = {
 };
 
 export async function POST(request: Request) {
-  const redis = getRedis();
-  if (!redis) {
-    return NextResponse.json(
-      { error: "Depolama yapılandırılmamış" },
-      { status: 503 },
-    );
-  }
-
   let body: Body;
   try {
     body = (await request.json()) as Body;
@@ -56,8 +48,11 @@ export async function POST(request: Request) {
     answers: body.answers,
   };
 
-  await redis.lpush(SUBMISSIONS_KEY, JSON.stringify(submission));
-  await redis.ltrim(SUBMISSIONS_KEY, 0, 99);
+  try {
+    await saveSubmission(submission);
+  } catch {
+    return NextResponse.json({ error: "Kayıt başarısız" }, { status: 500 });
+  }
 
   return NextResponse.json({ ok: true, id: submission.id });
 }

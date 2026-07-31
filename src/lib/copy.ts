@@ -68,11 +68,8 @@ export const copy = {
   ],
   answers: {
     title: "Cevaplar",
-    subtitle: "sadece senin için",
-    passwordLabel: "şifre",
-    unlock: "Aç",
+    subtitle: "her oturum burada",
     empty: "henüz kimse cevaplamamış",
-    wrongPassword: "şifre yanlış",
     noAttempts: (n: number) =>
       n === 0 ? "hayır denemedi 😇" : `${n} kez hayır denedi 👀`,
     loading: "yükleniyor…",
