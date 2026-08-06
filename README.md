@@ -1,4 +1,4 @@
-# Asya quiz
+# Şevval quiz
 
 Cute Turkish mobile quiz. Deploy to Vercel, then send her:
 

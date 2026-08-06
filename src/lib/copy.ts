@@ -1,5 +1,5 @@
 export const copy = {
-  brand: "Asya",
+  brand: "Şevval",
   welcomeLine: "sana küçük, tatlı bir şey hazırladım",
   start: "Başla",
   fakeName: {
@@ -7,7 +7,7 @@ export const copy = {
     placeholder: "ismini yaz…",
     submit: "Tamam",
   },
-  nameReveal: ["Asya...", "İsmini biliyorum", "Merak etme 🥰", "Şimdi gerçek sorular..."],
+  nameReveal: ["Şevval...", "İsmini biliyorum", "Merak etme 🥰", "Şimdi gerçek sorular..."],
   progress: (current: number, total: number) => `${current} / ${total}`,
   next: "Devam",
   doneTitle: "bitti ✨",

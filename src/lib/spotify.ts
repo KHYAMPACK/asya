@@ -1,4 +1,4 @@
-export const asyaPlaylist = {
+export const sevvalPlaylist = {
   id: "141DLtQbHUP3LjtCUHxETl",
   openUrl:
     "https://open.spotify.com/playlist/141DLtQbHUP3LjtCUHxETl?si=bac9213438d44911",

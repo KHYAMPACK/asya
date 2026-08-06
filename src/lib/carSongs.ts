@@ -11,34 +11,19 @@ export type CarSong = {
  * Order is shuffled at runtime in the picker.
  */
 export const carSongs: CarSong[] = [
-  { id: "6d67Xv8ms2noA8wWFLiPDN", title: "Twilight", artist: "", trackId: "6d67Xv8ms2noA8wWFLiPDN" },
-  { id: "42qNWdLKCI41S4uzfamhFM", title: "Duvet", artist: "", trackId: "42qNWdLKCI41S4uzfamhFM" },
-  { id: "6GDd1lZ0zp5pB6JleN5Xzx", title: "California", artist: "", trackId: "6GDd1lZ0zp5pB6JleN5Xzx" },
-  { id: "56NEihhw1BsIgBBzfvcE76", title: "Bags", artist: "", trackId: "56NEihhw1BsIgBBzfvcE76" },
-  { id: "57VAuR1WgKFzcpO3ujQx9A", title: "Harbor", artist: "", trackId: "57VAuR1WgKFzcpO3ujQx9A" },
-  { id: "6okfc9cxb2svHFgrqtFPG6", title: "Trying", artist: "", trackId: "6okfc9cxb2svHFgrqtFPG6" },
-  { id: "7EAMXbLcL0qXmciM5SwMh2", title: "Heart To Heart", artist: "", trackId: "7EAMXbLcL0qXmciM5SwMh2" },
-  { id: "2R4AlwtrrkMaRKojcTIzmL", title: "For the First Time", artist: "", trackId: "2R4AlwtrrkMaRKojcTIzmL" },
-  { id: "6jgkEbmQ2F2onEqsEhiliL", title: "My Kind of Woman", artist: "", trackId: "6jgkEbmQ2F2onEqsEhiliL" },
-  { id: "2QzKAF0y1BQhxwg8N05Uog", title: "Watching Him Fade Away", artist: "", trackId: "2QzKAF0y1BQhxwg8N05Uog" },
-  { id: "7asyVbwQE7IbA3x2be7bdI", title: "Fool", artist: "", trackId: "7asyVbwQE7IbA3x2be7bdI" },
-  { id: "0oS6978exXanyIZJD4cdgV", title: "1999", artist: "", trackId: "0oS6978exXanyIZJD4cdgV" },
-  { id: "43iIQbw5hx986dUEZbr3eN", title: "From The Start", artist: "", trackId: "43iIQbw5hx986dUEZbr3eN" },
-  { id: "3ISKxnCGKc5B9zr9CTUB3v", title: "Bags - Recorded At Electric Lady Studios", artist: "", trackId: "3ISKxnCGKc5B9zr9CTUB3v" },
-  { id: "0KyAGiNGUytG5JLxJu4F6l", title: "Pretty Girl", artist: "", trackId: "0KyAGiNGUytG5JLxJu4F6l" },
-  { id: "34q8siON3Dxf5HFVt3pynf", title: "Blouse", artist: "", trackId: "34q8siON3Dxf5HFVt3pynf" },
-  { id: "0OpC8hRrbsh24taKOsQBEX", title: "Real Man", artist: "", trackId: "0OpC8hRrbsh24taKOsQBEX" },
-  { id: "1AMADyXgIWayh5vXLZo2qF", title: "Covet", artist: "", trackId: "1AMADyXgIWayh5vXLZo2qF" },
-  { id: "0z1o5L7HJx562xZSATcIpY", title: "Exit Music (For A Film)", artist: "", trackId: "0z1o5L7HJx562xZSATcIpY" },
-  { id: "2ctvdKmETyOzPb2GiJJT53", title: "Breathe (In the Air)", artist: "", trackId: "2ctvdKmETyOzPb2GiJJT53" },
-  { id: "0Ot6e3wYVQQ1Us9PM977jE", title: "A Little Death", artist: "", trackId: "0Ot6e3wYVQQ1Us9PM977jE" },
-  { id: "709ZIqPHyFOpx2QdjmeWAM", title: "Dracula", artist: "", trackId: "709ZIqPHyFOpx2QdjmeWAM" },
-  { id: "46eHxWRKmtYhUHPDRgclt6", title: "Careless Whisper", artist: "", trackId: "46eHxWRKmtYhUHPDRgclt6" },
-  { id: "4eAwB5pnKFTmsgc3zWoYO0", title: "Fake It", artist: "", trackId: "4eAwB5pnKFTmsgc3zWoYO0" },
-  { id: "4eTIe5eqds88bA9ua6p5p6", title: "Fine Again", artist: "", trackId: "4eTIe5eqds88bA9ua6p5p6" },
+  { id: "1j0hYAYyxLPst8rTS2O3Hd", title: "2 Tas Çorba - Sıcak Versiyon", artist: "", trackId: "1j0hYAYyxLPst8rTS2O3Hd" },
+  { id: "1jH3jM3CqPmZcX7gzVPLHb", title: "Çakkıdı", artist: "", trackId: "1jH3jM3CqPmZcX7gzVPLHb" },
+  { id: "08aV6QNL1GtSDTplVs4pFf", title: "Re", artist: "", trackId: "08aV6QNL1GtSDTplVs4pFf" },
+  { id: "7no46t2pn0kU6Htr8yfWtZ", title: "Kargalar", artist: "", trackId: "7no46t2pn0kU6Htr8yfWtZ" },
+  { id: "38SZCSmXZJDoaEf0YjQQv6", title: "Ölüyorum", artist: "", trackId: "38SZCSmXZJDoaEf0YjQQv6" },
+  { id: "0tvVGyUUocv1yfpXIAzcTc", title: "Askina Elveda", artist: "", trackId: "0tvVGyUUocv1yfpXIAzcTc" },
+  { id: "0RoQ5sk1Z9PH2xki3gv5hO", title: "Değmesin Ellerimiz", artist: "", trackId: "0RoQ5sk1Z9PH2xki3gv5hO" },
+  { id: "32d2UJY7JVyw96rZFw1g2S", title: "Dans Et", artist: "", trackId: "32d2UJY7JVyw96rZFw1g2S" },
+  { id: "5Y5K8lKCzMRSLDOqm8s2qq", title: "Prensesin Uykusuyum", artist: "", trackId: "5Y5K8lKCzMRSLDOqm8s2qq" },
+  { id: "3GXkYMKJ443tsH5KmOABnw", title: "Cesaretsizce Olmuyor", artist: "", trackId: "3GXkYMKJ443tsH5KmOABnw" },
 ];
 
-export const CAR_PLAYLIST_TARGET = 5;
+export const CAR_PLAYLIST_TARGET = 3;
 
 export function trackEmbedUrl(trackId: string) {
   return `https://open.spotify.com/embed/track/${trackId}?utm_source=generator&theme=0`;

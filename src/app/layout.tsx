@@ -15,7 +15,7 @@ const sans = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Asya",
+  title: "Şevval",
   description: "Sana küçük, tatlı bir şey",
 };
 

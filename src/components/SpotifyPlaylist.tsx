@@ -1,4 +1,4 @@
-import { asyaPlaylist } from "@/lib/spotify";
+import { sevvalPlaylist } from "@/lib/spotify";
 
 type Props = {
   title?: string;
@@ -10,8 +10,8 @@ export function SpotifyPlaylist({ title }: Props) {
       {title && <p className="spotify-hint">{title}</p>}
       <iframe
         className="spotify-embed"
-        title="Asya playlist"
-        src={asyaPlaylist.embedUrl}
+        title="Şevval playlist"
+        src={sevvalPlaylist.embedUrl}
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
       />

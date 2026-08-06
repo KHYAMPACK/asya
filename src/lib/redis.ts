@@ -1,6 +1,6 @@
 import { Redis } from "@upstash/redis";
 
-const SUBMISSIONS_KEY = "asya:submissions";
+const SUBMISSIONS_KEY = "sevval:submissions";
 
 export function getRedis() {
   const url = process.env.UPSTASH_REDIS_REST_URL;
